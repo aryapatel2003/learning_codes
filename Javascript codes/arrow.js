@@ -27,4 +27,3 @@ abc();
   console.log(`Patel Arya`);
 })("Arya");
 
-asdbclkncl;

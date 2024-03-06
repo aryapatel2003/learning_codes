@@ -284,3 +284,4 @@ const arr7 = [5, 10, 150, 20];
 const mapArray = arr7.map((x) => x / 5);
 console.log(mapArray);
 
+Arya
