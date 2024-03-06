@@ -279,14 +279,4 @@ const arr7 = [5, 10, 150, 20];
 const mapArray = arr7.map((x) => x / 5);
 console.log(mapArray);
 
-// ***if we are map current value in other value use map() method***
-console.log("map() method");
-const arr8 = [5, 10, 150, 20];
-const mapArray8 = arr7.map((x) => x / 5);
-console.log(mapArray8);
 
-// ***if we are map current value in other value use map() method***
-console.log("map() method");
-const arr9 = [5, 10, 150, 20];
-const mapArray9 = arr7.map((x) => x / 5);
-console.log(mapArray9);
