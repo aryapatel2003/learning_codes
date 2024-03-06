@@ -97,6 +97,11 @@ for (value of cars) {
 }
 
 console.log(" ");
+
+
+
+
+
 // ***********Various methods of array************
 
 console.log("concate arrays by  concat() method");

@@ -12,7 +12,7 @@ user.welcomeMessge();
 user.username = "Patel";
 user.welcomeMessge();
 
-console.log(this)
+console.log(this);
 
 function abc() {
   console.log(this);
@@ -27,4 +27,4 @@ abc();
   console.log(`Patel Arya`);
 })("Arya");
 
-
+asdbclkncl;
