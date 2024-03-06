@@ -279,12 +279,3 @@ const arr7 = [5, 10, 150, 20];
 const mapArray = arr7.map((x) => x / 5);
 console.log(mapArray);
 
-console.log(" ");
-// ***if we are find index value from last do use lastIndexOf() method***
-console.log("lastIndexOf() method");
-const lastIndexOf1 = ["html", "css", "js", "bs", "js"];
-
-console.log(
-  "check the index of 'css' using lastIndexOf : " +
-    lastIndexOf1.lastIndexOf("css")
-);
