@@ -244,11 +244,11 @@ console.log(" ");
 console.log("join() method");
 
 console.log("arrindexof after join() : " + arrindexof.join());
-console.log("arrindexof after join() : " + arrindexof.join('-'));
-console.log("arrindexof after join() : " + arrindexof.join('_'));
-console.log("arrindexof after join() : " + arrindexof.join(','));
-console.log("arrindexof after join() : " + arrindexof.join(' '));
-console.log("arrindexof after join() : " + arrindexof.join('  '));
+console.log("arrindexof after join() : " + arrindexof.join("-"));
+console.log("arrindexof after join() : " + arrindexof.join("_"));
+console.log("arrindexof after join() : " + arrindexof.join(","));
+console.log("arrindexof after join() : " + arrindexof.join(" "));
+console.log("arrindexof after join() : " + arrindexof.join("  "));
 
 console.log(" ");
 
@@ -268,12 +268,20 @@ console.log("lastIndexOf() method");
 const lastIndexOf = ["html", "css", "js", "bs", "js"];
 
 console.log(
-  "check the index of 'css' using lastIndexOf : " + lastIndexOf.lastIndexOf("css")
+  "check the index of 'css' using lastIndexOf : " +
+    lastIndexOf.lastIndexOf("css")
 );
 
 console.log(" ");
 // ***if we are map current value in other value use map() method***
 console.log("map() method");
-const arr7 = [5 , 10, 150, 20];
-const mapArray = arr7.map(x => x / 5);
+const arr7 = [5, 10, 150, 20];
+const mapArray = arr7.map((x) => x / 5);
 console.log(mapArray);
+
+
+// ***if we are map current value in other value use map() method***
+console.log("map() method");
+const arr8 = [5, 10, 150, 20];
+const mapArray8 = arr7.map((x) => x / 5);
+console.log(mapArray8);
