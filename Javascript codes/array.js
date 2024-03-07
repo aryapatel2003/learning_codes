@@ -22,8 +22,8 @@ console.log(myArr.includes(4));
 // slice  and splice=====
 console.log("A ", myArr);
 const myn1 = myArr.slice(1, 3);
-
 console.log(myn1);
+console.log("A ", myArr);
 
 console.log("B ", myArr);
 
@@ -31,6 +31,7 @@ const myn2 = myArr.splice(1, 3);
 console.log(myn2);
 
 console.log("C ", myArr);
+console.log("B ", myArr);
 
 // ========concate array=======
 const marvel_Heros = ["thor", "ironman", "spiderman"];
@@ -97,10 +98,6 @@ for (value of cars) {
 }
 
 console.log(" ");
-
-
-
-
 
 // ***********Various methods of array************
 
@@ -284,4 +281,165 @@ const arr7 = [5, 10, 150, 20];
 const mapArray = arr7.map((x) => x / 5);
 console.log(mapArray);
 
-Arya
+console.log(" ");
+// ***if we get in array value use of() method***
+console.log("of() method");
+console.log("generate Array using of() : " + Array.of(1, 2, 4, 3, 6, 4));
+console.log(Array.of(1, 2, 4, 3, 6, 4));
+console.log(Array.of(1, "hello", 4, 3, 6, 4));
+
+console.log(" ");
+// ***if we enter a number in array using push() method***
+console.log("push() method");
+
+const adarr = [1, 2, 3, 4];
+adarr.push(5);
+console.log("add 5 using push() : " + adarr);
+
+console.log(" ");
+// ***if we enter a number in array using push() method***
+console.log("pop() method");
+
+adarr.pop();
+console.log("remove an element using  pop() : " + adarr);
+
+console.log(" ");
+// ***if we get number in reverse direction using reverse() method***
+console.log("reverse() method");
+
+adarr.reverse();
+console.log("element get in reverse direction using  reverse() : " + adarr);
+
+console.log(" ");
+// ***if we get operation using reduce() method***
+console.log("reduce() method");
+const redarr = [1, 2, 3, 4, 5];
+const ope = redarr.reduce(function (accumulator, currentvalue) {
+  return accumulator + currentvalue;
+});
+console.log("Result after reduce() : " + ope);
+
+const ope1 = redarr.reduce(function (accumulator, currentvalue) {
+  return accumulator * currentvalue;
+});
+console.log("Result after reduce() : " + ope1);
+
+const redarr1 = [5];
+const ope2 = redarr1.reduce(function (accumulator, currentvalue) {
+  return accumulator + currentvalue;
+});
+console.log("Result after reduce() : " + ope2);
+
+console.log(" ");
+// ***if we get operation using some() method***
+console.log("some() method");
+
+const somearr = [5, 6, 7, 80];
+
+function test(argument) {
+  return argument > 50;
+}
+
+const Resultsome = somearr.some(test);
+console.log("Dose Array somearr has any value > 50 ? : " + Resultsome);
+
+console.log(" ");
+// ***if we get operation using some() method***
+console.log("some() method");
+
+const everyarr = [90, 60, 70, 80];
+
+function test(argument) {
+  return argument > 50;
+}
+
+const Resultevery = everyarr.every(test);
+console.log("Dose Array everyarr has any value > 50 ? : " + Resultevery);
+
+console.log(" ");
+// ***if we get operation using sift() method***
+console.log("sift() method");
+
+console.log(
+  "Removing the very first elememt of Array everyarr : " + everyarr.shift()
+);
+console.log(everyarr.shift());
+
+console.log(" ");
+// ***if we get operation using slice() method***
+console.log("slice() method");
+
+const slarr = [4, 5, 6, 7, 3, 5, 4, 5];
+const slicearray = slarr.slice(4);
+
+console.log("Slice array : " + slicearray);
+console.log(slarr);
+
+console.log(" ");
+// ***if we get operation using slice() method***
+console.log("slice() method");
+
+const slarr1 = [4, 5, 6, 7, 3, 5, 4, 5];
+// *****NOTE: LAST ELEMENT IS NOT ADD IN SLICE ANS *****
+const slicearray1 = slarr.slice(4, 5);
+
+console.log("Slice array : " + slicearray1);
+console.log(slarr1);
+
+console.log(" ");
+// ***if we get operation using sort() method***
+console.log("sort() method");
+
+const num1 = [8, 6, 4, 3, 7, 4, 1, 2];
+const langauge = ["HTML", "CSS", "JAVA", "BOOTSTRAP", "PYTHON"];
+
+console.log("Sorted number : " + num1.sort());
+console.log("Sorted laguage : " + langauge.sort());
+
+console.log("the minimum number from array:  " + num1);
+const result3 = num1.sort();
+console.log("is :" + result3[0]);
+
+console.log("the maximum number from array:  " + num1);
+const result4 = num1.sort();
+console.log("is :" + result4[num1.length - 1]);
+
+console.log(" ");
+// ***if we get operation using splice() method***
+console.log("splice() method");
+
+// +++++++SENTEX : splice() : Array.splice(start, delete , ...element)+++++++
+
+const splarr = ["Monday", "Tuesday", "thursday", "friday"];
+console.log(splarr);
+const splicearray = splarr.splice(2, 0, "wednesday");
+console.log("splice array : " + splarr);
+console.log(splarr);
+
+console.log(" ");
+const splarr1 = [
+  "Monday",
+  "Tuesday",
+  "saturday",
+  "sunday",
+  "thursday",
+  "friday",
+];
+console.log(splarr1);
+const splicearray1 = splarr1.splice(2, 2, "wednesday");
+console.log("splice array for remove and add : " + splarr1);
+console.log(splarr1);
+
+console.log(" ");
+const str = splarr1.toLocaleString();
+console.log("in string formate : " + str);
+
+console.log(" ");
+// ***if we get operation using unshift() method***
+console.log("unshift() method");
+
+const unshiftarr = [2, 3, 4];
+console.log(unshiftarr);
+
+const afterunshiftarr = unshiftarr.unshift(1);
+console.log(unshiftarr);
