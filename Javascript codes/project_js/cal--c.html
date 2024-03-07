@@ -11,6 +11,7 @@
     second no.: <input type="text" id="sno">
     <button onclick="fun1()">calculate</button>
     result: <h2 id="result"></h2>
+    result: <h2 id="result1"></h2>
 
 </body>
 <script>
@@ -19,7 +20,9 @@
         const sec_no = document.getElementById("sno").value;
 
         const total = parseInt(fir_no) + parseInt(sec_no);
+        const total1 =fir_no;
         document.getElementById("result").innerHTML = total;
+        document.getElementById("result1").innerHTML = total1;
     }
 </script>
 </html>
