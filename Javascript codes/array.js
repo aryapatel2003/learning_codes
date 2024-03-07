@@ -98,6 +98,7 @@ for (value of cars) {
 }
 
 console.log(" ");
+console.log(" ");
 
 // ***********Various methods of array************
 
@@ -111,11 +112,15 @@ const abc1 = arr2.concat(arr1);
 console.log(abc);
 console.log(abc1);
 console.log(" ");
+console.log(" ");
 
 console.log(" copyWithin() method");
 // const copyWithinArray = arr2.copyWithin(start, firstelement, lastelememnt)
 const copyWithinArray = arr2.copyWithin(0, 0, 2);
 console.log(copyWithinArray);
+const copyWithinArray1 = arr2.copyWithin(0, 0, 1);
+console.log(copyWithinArray1);
+console.log(" ");
 console.log(" ");
 
 console.log(" every() method");
@@ -134,8 +139,9 @@ for (value of entriesArray) {
 // this sentex chek Node. is greter or not in array
 console.log(arr3.every(check));
 console.log(" ");
+console.log(" ");
 
-// ***in other array and this multidimesion array convert in one arra by  flat() method***
+// ***in other array and this multidimesion array convert in one array by  flat() method***
 console.log("flat() method");
 
 const arr4 = [11, 12, [13, 14], [15, 16, 17], 18, 19, 20];
@@ -181,6 +187,7 @@ const func = function () {
 
 func("html", "java", "c");
 console.log(" ");
+console.log(" ");
 // ***in array i will saperate value from array so use filter() method***
 console.log("filter() method");
 const num = [11, 41, 56, 33, 90, 22, 12];
@@ -191,6 +198,7 @@ function check1(value) {
 
 console.log("num array after filter() : " + num.filter(check1));
 
+console.log(" ")
 // ***in array i will find value from array so use find() method***
 console.log("find() method");
 
@@ -203,19 +211,22 @@ console.log("find() method");
 const findIndexArray = num.findIndex((x) => x > 30);
 console.log(findIndexArray);
 
-// ***in array i will find value is present or not so use includes() method***
-console.log("includes() method");
-
-const arrind = ["html", " css", "js", "bs"];
-console.log("chek elemene is include here : " + arrind.includes("js"));
-// ans: chek elemene is include here : true
 console.log(" ");
 // ***in array i will find value is present or not so use includes() method***
 console.log("includes() method");
 
+const arrind = ["html", " css", "js", "bs"];
+console.log("chek element is include here : " + arrind.includes("js"));
+// ans: chek elemene is include here : true
+console.log(" ");
+console.log(" ");
+// ***in array i will find value is present or not so use includes() method***
+// console.log("includes() method");
+
 const arrindexof = ["html", "css", "js", "bs", "js"];
 // ans: chek elemene is include here : true
 
+console.log(" ");
 console.log(" ");
 
 // ***in array i will find index number so use includes() method***
@@ -226,6 +237,8 @@ console.log(
   "Index of next.js not in array element : " + arrindexof.indexOf("next.js")
 );
 // Index of next.js not in array element : -1
+console.log(" ");
+console.log(" ");
 console.log(" ");
 console.log(" ");
 
@@ -241,6 +254,7 @@ console.log(
     Array.isArray(arrindexof)
 );
 console.log(" ");
+console.log(" ");
 
 // ***if we are join value and change that data type like array to string use join() method***
 console.log("join() method");
@@ -252,6 +266,7 @@ console.log("arrindexof after join() : " + arrindexof.join(","));
 console.log("arrindexof after join() : " + arrindexof.join(" "));
 console.log("arrindexof after join() : " + arrindexof.join("  "));
 
+console.log(" ");
 console.log(" ");
 
 // ***if we are key value do use keys() method***
@@ -265,6 +280,7 @@ for (k of keyArray) {
 }
 
 console.log(" ");
+console.log(" ");
 // ***if we are find index value from last do use lastIndexOf() method***
 console.log("lastIndexOf() method");
 const lastIndexOf = ["html", "css", "js", "bs", "js"];
@@ -275,6 +291,7 @@ console.log(
 );
 
 console.log(" ");
+console.log(" ");
 // ***if we are map current value in other value use map() method***
 console.log("map() method");
 const arr7 = [5, 10, 150, 20];
@@ -282,12 +299,14 @@ const mapArray = arr7.map((x) => x / 5);
 console.log(mapArray);
 
 console.log(" ");
+console.log(" ");
 // ***if we get in array value use of() method***
 console.log("of() method");
 console.log("generate Array using of() : " + Array.of(1, 2, 4, 3, 6, 4));
 console.log(Array.of(1, 2, 4, 3, 6, 4));
 console.log(Array.of(1, "hello", 4, 3, 6, 4));
 
+console.log(" ");
 console.log(" ");
 // ***if we enter a number in array using push() method***
 console.log("push() method");
@@ -297,6 +316,7 @@ adarr.push(5);
 console.log("add 5 using push() : " + adarr);
 
 console.log(" ");
+console.log(" ");
 // ***if we enter a number in array using push() method***
 console.log("pop() method");
 
@@ -304,12 +324,14 @@ adarr.pop();
 console.log("remove an element using  pop() : " + adarr);
 
 console.log(" ");
+console.log(" ");
 // ***if we get number in reverse direction using reverse() method***
 console.log("reverse() method");
 
 adarr.reverse();
 console.log("element get in reverse direction using  reverse() : " + adarr);
 
+console.log(" ");
 console.log(" ");
 // ***if we get operation using reduce() method***
 console.log("reduce() method");
@@ -331,6 +353,7 @@ const ope2 = redarr1.reduce(function (accumulator, currentvalue) {
 console.log("Result after reduce() : " + ope2);
 
 console.log(" ");
+console.log(" ");
 // ***if we get operation using some() method***
 console.log("some() method");
 
@@ -343,6 +366,7 @@ function test(argument) {
 const Resultsome = somearr.some(test);
 console.log("Dose Array somearr has any value > 50 ? : " + Resultsome);
 
+console.log(" ");
 console.log(" ");
 // ***if we get operation using some() method***
 console.log("some() method");
@@ -357,6 +381,7 @@ const Resultevery = everyarr.every(test);
 console.log("Dose Array everyarr has any value > 50 ? : " + Resultevery);
 
 console.log(" ");
+console.log(" ");
 // ***if we get operation using sift() method***
 console.log("sift() method");
 
@@ -365,6 +390,7 @@ console.log(
 );
 console.log(everyarr.shift());
 
+console.log(" ");
 console.log(" ");
 // ***if we get operation using slice() method***
 console.log("slice() method");
@@ -376,6 +402,7 @@ console.log("Slice array : " + slicearray);
 console.log(slarr);
 
 console.log(" ");
+console.log(" ");
 // ***if we get operation using slice() method***
 console.log("slice() method");
 
@@ -386,6 +413,7 @@ const slicearray1 = slarr.slice(4, 5);
 console.log("Slice array : " + slicearray1);
 console.log(slarr1);
 
+console.log(" ");
 console.log(" ");
 // ***if we get operation using sort() method***
 console.log("sort() method");
@@ -405,6 +433,7 @@ const result4 = num1.sort();
 console.log("is :" + result4[num1.length - 1]);
 
 console.log(" ");
+console.log(" ");
 // ***if we get operation using splice() method***
 console.log("splice() method");
 
@@ -416,6 +445,7 @@ const splicearray = splarr.splice(2, 0, "wednesday");
 console.log("splice array : " + splarr);
 console.log(splarr);
 
+console.log(" ");
 console.log(" ");
 const splarr1 = [
   "Monday",
@@ -431,9 +461,11 @@ console.log("splice array for remove and add : " + splarr1);
 console.log(splarr1);
 
 console.log(" ");
+console.log(" ");
 const str = splarr1.toLocaleString();
 console.log("in string formate : " + str);
 
+console.log(" ");
 console.log(" ");
 // ***if we get operation using unshift() method***
 console.log("unshift() method");
@@ -443,3 +475,28 @@ console.log(unshiftarr);
 
 const afterunshiftarr = unshiftarr.unshift(1);
 console.log(unshiftarr);
+
+console.log(" ");
+console.log(" ");
+// ***if we adding anynumber in the begining of the array using unshift() method***
+console.log("unshift() method");
+
+
+const valueArray = splarr.values();
+console.log("after adding a iterator : ");
+
+for (value of valueArray) {
+  console.log(value);
+
+}
+
+const valueArray1 = splarr.values();
+
+console.log(valueArray1);
+
+console.log(valueArray1.next().value); 
+console.log(valueArray1.next().value); 
+console.log(valueArray1.next().value); 
+console.log(valueArray1.next().value); 
+console.log(valueArray1.next().value); 
+
