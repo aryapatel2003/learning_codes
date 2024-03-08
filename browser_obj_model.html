@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Browser Objects Model</h2>
+
+    <input type="button" value="Show" onclick="message()">
+    <input type="button" value="confirm1" onclick="confirm1()">
+    <input type="button" value="confirm2" onclick="confirm2()">
+    <input type="button" value="addinput" onclick="addinput()">
+    <input type="button" value="Open" onclick="openweb()">
+    <input type="button" value="close" onclick="closeweb()">
+
+    <script>
+        function message(){
+            alert("Arya Patel")
+            //*****when we use 'alert' than show popup only "OK" button
+        }
+
+        function confirm1(){
+            const Confirm = confirm("Are Ready ?")
+            //when we use 'confirm' than show popup with "OK" and "CANCEL" button
+
+        }
+
+        function confirm2(){
+            var Confirm2= confirm("Are tack this?")
+
+            if(Confirm2 == true){
+                alert("The value is true")
+            }
+            else{
+                alert("The value is false")
+            }
+        }
+
+
+        function addinput(){
+            var Input= prompt("What is your Age?");
+        }
+
+        function openweb(){
+            open("https://www.learnvern.com/");
+        }
+
+
+    </script>
+</body>
+</html>

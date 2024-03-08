@@ -198,7 +198,7 @@ function check1(value) {
 
 console.log("num array after filter() : " + num.filter(check1));
 
-console.log(" ")
+console.log(" ");
 // ***in array i will find value from array so use find() method***
 console.log("find() method");
 
@@ -481,22 +481,20 @@ console.log(" ");
 // ***if we adding anynumber in the begining of the array using unshift() method***
 console.log("unshift() method");
 
-
 const valueArray = splarr.values();
 console.log("after adding a iterator : ");
 
 for (value of valueArray) {
   console.log(value);
-
 }
 
 const valueArray1 = splarr.values();
 
 console.log(valueArray1);
 
-console.log(valueArray1.next().value); 
-console.log(valueArray1.next().value); 
-console.log(valueArray1.next().value); 
-console.log(valueArray1.next().value); 
-console.log(valueArray1.next().value); 
+console.log(valueArray1.next().value);
+console.log(valueArray1.next().value);
+console.log(valueArray1.next().value);
+console.log(valueArray1.next().value);
+console.log(valueArray1.next().value);
 
