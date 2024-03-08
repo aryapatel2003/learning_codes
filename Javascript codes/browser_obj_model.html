@@ -13,7 +13,8 @@
     <input type="button" value="confirm2" onclick="confirm2()">
     <input type="button" value="addinput" onclick="addinput()">
     <input type="button" value="Open" onclick="openweb()">
-    <input type="button" value="close" onclick="closeweb()">
+    <input type="button" value="Open in few second" onclick="Timing()">
+    <input type="button" value="Close" onclick="Closetag()">
 
     <script>
         function message(){
@@ -38,7 +39,6 @@
             }
         }
 
-
         function addinput(){
             var Input= prompt("What is your Age?");
         }
@@ -46,8 +46,19 @@
         function openweb(){
             open("https://www.learnvern.com/");
         }
+       
 
+        function Timing(){
+            setTimeout(
+                function(){
+                    alert("This is Arya Patel");
+                }, 2000);
+        }
 
+        function Closetag(){
+            close();
+        }
+        
     </script>
 </body>
 </html>
